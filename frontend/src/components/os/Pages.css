@@ -1,0 +1,174 @@
+/* Import fonts - using Playfair Display for headings and Raleway for body text */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f0e6d0;
+  color: #3a3a3a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chapter content container */
+.chapter-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f8f3e2;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Chapter heading */
+.chapter-content h1 {
+  font-family: 'Playfair Display', serif;
+  color: #742f37;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e6d7b8;
+  
+}
+
+/* Section styles */
+.learning-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.learning-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Section headings */
+.learning-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #742f37;
+  font-size: 1.5rem;
+  margin-top: 0;
+  border-left: 4px solid #742f37;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.learning-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Lists */
+.learning-section ul {
+  padding-left: 25px;
+}
+
+.learning-section li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.learning-section li::marker {
+  color: #742f37;
+  font-weight: bold;
+}
+
+/* Strong text emphasis */
+strong {
+  color: #742f37;
+  font-weight: 500;
+}
+
+/* Summary section */
+.chapter-summary {
+  background-color: #f0e6d0;
+  border-left: 4px solid #742f37;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 0 8px 8px 0;
+}
+
+.chapter-summary h3 {
+  font-family: 'Playfair Display', serif;
+  color: #742f37;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* Navigation buttons (for future chapters) */
+.chapter-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chapter-content {
+    padding: 20px 15px;
+  }
+  
+  .chapter-content h1 {
+    font-size: 2rem;
+  }
+  
+  .learning-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* KNOW brand logo (for header) */
+.know-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #742f37;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+/* Tagline styling */
+.tagline {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Get Started button styling */
+.get-started-btn {
+  display: block;
+  width: 150px;
+  margin: 30px auto;
+  padding: 12px 0;
+  background-color: #742f37;
+  color: #f8f3e2;
+  text-align: center;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.get-started-btn:hover {
+  background-color: #5e262c;
+  transform: scale(1.05);
+}

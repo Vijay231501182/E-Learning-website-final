@@ -1,0 +1,15 @@
+trigger:
+- main
+
+# Use your self-hosted agent pool instead of Microsoft-hosted agents
+pool:
+  name: self # Replace with the name of your self-hosted agent pool if different
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'

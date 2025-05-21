@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Think";
+    src: url("../fonts/Think-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.5rem;
+    font-family: "Think", sans-serif;
+}
+
+
+.hero-description {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

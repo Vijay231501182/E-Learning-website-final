@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+.nav button {
+    background-color: #4f2a2f;
+    color: #f8f3e2;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav button:hover {
+    background-color: #000000;
+    color: aliceblue;
+}
